@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>FoodBib</title>
+        <link rel="shortcut icon" href="favicon.svg">
+
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <!-- ========================= -->
+        <!-- Grundgerüst der Anwendung -->
+        <!-- ========================= -->
+        <section id="app">
+            <!-- Topbar -->
+            <header>
+                <!-- Obere Zeile (fester Inhalt) -->
+                <div class="top left">
+                    <div class="item hamburger-menu menu-closed">
+                        <b>
+                            <span class="menu-icon">≡</span>
+                              FoodBib
+                        </b>
+                    </div>
+                </div>
+                <div class="top right menu-content">
+                    <div class="item">
+                        <a href="https://github.com/DennisSchulmeister/dhbwka-wwi-webprog-my-songbook" target="_blank">Dein Bereich</a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.wpvs.de/browser-app/" target="_blank">Credits</a>
+                    </div>
+                </div>
+
+                <!-- Untere Zeile (dynamisch je nach View) -->
+            </header>
+
+            <!-- Hauptbereich (dynamisch je nach View) -->
+            <main>
+              
+
+            </main>
+        </section>
+
+        <!-- ====================== -->
+        <!-- View: Vorhandene Songs -->
+        <!-- ====================== -->
+        <section id="song-overview" class="hidden">
+            <!-- Topbar -->
+            <header>
+                <div class="left menu-content">
+                    <div class="item">
+                        <a href="/rezept/new/" data-navigo>
+                            Rezept hinzufügen
+                        </a>
+                    </div>
+                    <div class="item cmd-sort" data-sort-by="title">
+                        <a>
+                            Liste nach Titel sortieren
+                        </a>
+                    </div>
+                    <div class="item cmd-sort" data-sort-by="artist">
+                        <a>
+                            Liste nach Künstler sortieren
+                        </a>
+                    </div>
+                </div>
+                <div class="right">
+                    <input class="search" placeholder="Suchen" />
+                </div>
+            </header>
+
+            <!-- Hauptbereich -->
+            <main>
+                <ul></ul>
+            </main>
+        </section>
+
+        <!-- ================================== -->
+        <!-- View: Song anzeigen und bearbeiten -->
+        <!-- ================================== -->
+        <section id="song-display-edit" class="hidden">
+            <!-- Topbar -->
+            <header>
+                <div class="left menu-content">
+                    <!-- Leer -->
+                </div>
+                <div class="right">
+                    <div class="item">
+                        <a href="/" data-navigo>
+                            Zurück zur Übersicht
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Hauptbereich -->
+            <main>
+                <div class="padding">
+                    Song anzeigen/bearbeiten
+                </div>
+            </main>
+        </section>
+    </body>
+</html>
